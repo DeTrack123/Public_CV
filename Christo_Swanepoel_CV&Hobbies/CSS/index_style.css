@@ -1,0 +1,74 @@
+/* Body styling. */
+body {
+  height: 100vh;
+  background-color: #2c3e50;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #ecf0f1;
+}
+body h1 {
+  font-family: Comic Sans MS, sans-serif;
+}
+body p {
+  font-size: 20px;
+}
+
+/* Split screen styling. */
+.splitScreen {
+  display: flex;
+  height: 100vh;
+}
+
+/* Split left and right styling. */
+.splitLeft {
+  width: 50%;
+  background-color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splitRight {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header content styling. */
+#headerContent {
+  text-align: center;
+  color: #3498db;
+}
+
+/* Button styling. */
+.btn,
+button {
+  background: #3498db;
+  text-decoration: none;
+  color: #ecf0f1;
+  margin: 15px 0;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover,
+button:hover {
+  background: #5faee3;
+}
+
+/* Section styling. */
+section {
+  max-width: 600px;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  background: #3e5871;
+}
+section h4 {
+  font-family: Arial, sans-serif;
+}/*# sourceMappingURL=index_style.css.map */
