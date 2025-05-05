@@ -1,0 +1,93 @@
+@import "./_variables";
+/* Body styling. */
+body {
+  font-family: $fontFamily;
+  background-color: $primaryColor;
+  color: $textColor;
+  margin: 50px;
+  padding: 20px;
+  h2 {
+    font-family: $bigFontFamily;
+    font-size: 30px;
+  }
+}
+/* Header styling. */
+header {
+  background: $secondaryColor;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-family: $secondaryFontFamily;
+  }
+  p {
+    font-family: $paragraphFontFamily;
+    color: $textColor;
+  }
+}
+a {
+  color: $textColor;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    padding: 5px 0 5px 0;
+    background: lighten($secondaryColor, 10%);
+  }
+}
+nav {
+  ul {
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: darken($secondaryColor, 10%);
+    li {
+      margin: 10px;
+    }
+  }
+}
+/* Section styling. */
+section {
+  max-width: 1500px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background: lighten($primaryColor, 10%);
+  h4 {
+    font-family: $fontFamily;
+  }
+}
+/* Table styling for the table heading and rows. */
+table {
+  width: 80%;
+  border-collapse: separate;
+  margin-top: 20px;
+  th,
+  td {
+    border: 1px solid $textColor;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background: $secondaryColor;
+  }
+}
+/* Button styling. */
+button {
+  background: $secondaryColor;
+  color: $textColor;
+  margin: 15px 0;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  @include hoverAndCursor();
+}
+/* Image styling. */
+img {
+  width: auto;
+  height: 200px;
+  border-radius: 10px;
+  padding: 3px;
+}
